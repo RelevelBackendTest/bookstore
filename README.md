@@ -29,9 +29,9 @@ Password : password
 Note : You can create table for your problem statements using this database.
 Problem Breakdown:
 
-    Template-1: Adding Books to Store  and its related functionality
+  **Template-1: Adding Books to Store  and its related functionality**
 
-1.Story-1: Adding Books to Bookstore (~30min)
+**Story-1: Adding Books to Bookstore (~30min)**
  As a book store manager, the manager  should be able to add books to the book store under different category.
       The task is to create an endpoint localhost:8080/book to add details of the book to online store.
 1.	Choose appropriate HTTP methods (GET,POST,PUT,DELETE) to hit this URL.
@@ -40,7 +40,7 @@ Problem Breakdown:
 4.	In case user provides wrong input , they should get a message saying “Bad Request by user” with appropriate HTTP status.
 5.	In case user provides right set of inputs, the data should get stored in the database with an unique book ID, and user should get a response with message “Book added Successfully” with appropriate HTTP status
 
-2. Story-2 : Deleting Books from the Bookstore(~30 min)
+**Story-2 : Deleting Books from the Bookstore(~30 min)**
 The task is to create an endpoint localhost:8080/book/{bookID} to delete  a given from the book store.
 1.	Choose appropriate HTTP methods (GET,POST,PUT,DELETE) to hit this URL.
 2.	The user needs to provide the BOOK ID in the URL to delete a book from the book store.
@@ -55,7 +55,7 @@ The task is to create an endpoint localhost:8080/book/{bookID} to delete  a give
 
 
 
-3.Story-3 : Search Books from the Bookstore(~30 min)
+**Story-3 : Search Books from the Bookstore(~30 min)**
           The task is to create an endpoint localhost:8080/book search provide a search functionality for the user to search a book based on different fields.
 1.	Choose appropriate HTTP methods (GET,POST,PUT,DELETE) to hit this URL.
 2.	The user needs to provide the different attributes of the book (e.g. Book Name, Author, Publisher Name, Publishing Year etc.) as an input in the request body to the end point.
@@ -63,9 +63,9 @@ The task is to create an endpoint localhost:8080/book/{bookID} to delete  a give
 4.	In case no books matches the search criteria , the user should get an empty list with appropriate HTTP status.
 
 
-Template -2: Adding User and its related functionality
+**Template -2: Adding User and its related functionality**
 
-1.	Story -1 (~30 min): Create a User
+**Story -1 (~30 min): Create a User**
       The task is to create an endpoint localhost:8080/user so that we can create a user 
 a.	Choose appropriate HTTP methods(GET,POST,PUT,DELETE) to hit this URL.
 b.	The user should provide details like Name, Password, Phone Number, Email ID, Age, Gender, Address
@@ -75,7 +75,7 @@ e.	Upon successful creation of the user return HTTP status as 201 with a message
 f.	If user has provided wrong input , provide appropriate HTTP status
 
 
-2.	Story -2 (~30 min): Login for the User
+**Story -2 (~30 min): Login for the User**
       The task is to create an endpoint localhost:8080/login so that we can verify if user credentials are valid .
 a.	Choose appropriate HTTP methods(GET,POST,PUT,DELETE) to hit this URL.
 b. The user needs to provide email address as username and password to verify if the user credentials are correct
@@ -85,7 +85,7 @@ e. If the user name provided by the user doesn’t exist return a HTTP status as
 
 
 
-3.	Story-3 (~ 30 min): Retrieve the Details of the user
+**Story-3 (~ 30 min): Retrieve the Details of the user**
 The task is to create an endpoint localhost:8080/user/{userid}  to fetch the user details 
 1.	Choose appropriate HTTP methods (GET,POST,PUT,DELETE) to hit this URL.
 2.	The user needs to provide the ID of the user to get user details as  response.
@@ -93,16 +93,16 @@ The task is to create an endpoint localhost:8080/user/{userid}  to fetch the use
 4.	In case of Success , the user should see details of the user with appropriate HTTP status
 
 
-Template: 3 : Adding a book to User’s cart and its related functionality
+**Template: 3 : Adding a book to User’s cart and its related functionality**
 
-Story-1: Adding a book to a cart of a user (~30 min)
+**Story-1: Adding a book to a cart of a user (~30 min)**
 The task is to create an endpoint localhost:8080/cart so that add books to the cart of a given user  
 1.	Choose appropriate HTTP methods (GET,POST,PUT,DELETE) to hit this URL.
 2.	User needs to provide an existing userID , existing BookID , no of quantity in the body of the request to add a book to the cart.
 3.	In case of User ID or BookID don’t exist , send a response to the user “BOOK or USER don’t exist” with appropriate HTTP status.
 4.	In case of correct input by the user the book should get added to the user’s cart and cart details are stored in the database. The user should get a response “Book Added Successfully to the Cart” with an appropriate HTTP response
 
-      Story-2 : Viewing the cart of a user (~30 min)
+ **Story-2 : Viewing the cart of a user (~30 min)**
        The task is to create an endpoint localhost:8080/cart/{userID} to view the cart of a given user.
 1.	Choose appropriate HTTP methods (GET,POST,PUT,DELETE) to hit this URL.
 2.	We need to provide the UserID of the user in the URL to view its cart. e.g localhost:8080/cart/5 .
@@ -113,8 +113,7 @@ The task is to create an endpoint localhost:8080/cart so that add books to the c
 
 
 
-
-Story-3 : Deleting the books from the User’s cart (~30 min)
+**Story-3 : Deleting the books from the User’s cart (~30 min)**
 The task is to create an endpoint localhost:8080/cart
 1.	Choose appropriate HTTP methods (GET,POST,PUT,DELETE) to hit this URL.
 2.	We need to provide the UserID, BookID in the request body to delete a book from user’s cart.
